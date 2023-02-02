@@ -1,0 +1,15 @@
+import random
+
+def store_random_until_4():
+    while True:
+        A = random.randint(1, 9)
+        B = random.randint(1, 9)
+        C = A * B
+        if C == 4:
+            print("Success!")
+            print("A:", A)
+            print("B:", B)
+            break
+        print(A, C)
+
+store_random_until_4()
